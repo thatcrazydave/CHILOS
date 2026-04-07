@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-admin-bg);
+}
+
+.main {
+  flex: 1;
+  padding: var(--space-8);
+  overflow-y: auto;
+  min-width: 0; /* prevent flex overflow */
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: var(--space-4);
+  }
+}
